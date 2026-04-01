@@ -20,6 +20,13 @@ import { ethers } from 'ethers';
 // Note: When workspace linking is complete, re-export from @rootz/agent-runtime.
 // For now, this SDK is standalone — all types needed are defined here or inline.
 
+// Checkpoint/Resume
+export {
+  createCheckpoint,
+  validateCheckpoint,
+} from './checkpoint.js';
+export type { WalletCheckpoint, ResumeData } from './checkpoint.js';
+
 // ═══════════════════════════════════════════════════════════════════
 // AGENT WALLET — The simple API
 // ═══════════════════════════════════════════════════════════════════
